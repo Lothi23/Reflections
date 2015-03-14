@@ -1,0 +1,30 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+- By using diff, only the different lines between two version will be shown, which makes comparing much easier, in particular, if the coding is very long, say 1000+ lines
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+- easier to spot mistakes, if something worked in an old version, while not in the new one
+- if I had tried out a new concept in an old version that did not work, easier to revert back to old concept
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google docs does?
+- Advantage: Every commit will make logical sense
+- Disadvantage: Human error, in particular not saving enough
+
+
+GIT
+- Repository is a directory which includes my files
+- Commit is a version/snapshot of all files in the repository at a certain time
+- 
+
+GIT commands
+- git log - shows latest versions with changes
+- git diff - compares two documents
+- git checkout - "restoring previous versions"
+
+Detached Head - if checking out an older commit than the newest one
+
+How might using version control make you more confident to make changes that could break something?
+- If I know that I can revert back easily to a version that works, then I can obviously be more brave to make larger changes
+
+Now that you have your workspace set up, what do you want to try using Git for?
+- I want to create a repository of 1 or more files and then start working on them. While working on them, I would like to create commits, which are a snapshot of all the files at a certain time. I can compare different commits, in order to spot mistakes. I can also go back to an old commit. Question is how I save commits - that is still to come, I assume?
+
