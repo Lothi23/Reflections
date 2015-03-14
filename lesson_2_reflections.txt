@@ -6,3 +6,57 @@ Git status
 
 What happens when you initialize a repository? Why do you need to do it?
 - The current folder plus sub folders will be part of the repository, in order to add version control. This means that .git folder is created that is waiting to be filled with commits. In order to track files, we need to use Git add (to come)
+
+There are three main areas
+
+- outside (working directory): files not tracked
+- staging area: files that will be tracked, but no commit yet
+- Repository: saved snapshot
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+Intermediate area. Files can be added one at a time. So we dont need to commit the full working diretory, but only a subset of it
+
+This is all quite difficult! ;)
+
+Git diff with no arguments: compares working directory with staging area (usually also saves most recent commit)
+Git diff --staged Shows difference to staged and latest commit
+Git reset --hard this resets all changes in working directory and staging area
+
+How can you use the staging area to make sure you have one commit per logical change?
+- define the logical change
+- change all the files that are affected by this change (mostly only one, but say we add a box, then this could change both the html and the css file)
+- add one or more files into the staged area via git add
+- once all of these are added, type git commit to create a new version
+
+Branches
+- straight line makes sense for
+   - fix bugs
+   - new features
+   - updating documentation
+- branches make sense for
+   - new experimental feature
+   - different language versions
+
+ Master is the main branch
+ - different branches we can then call different branches
+
+ Git branch with no arguments: shows existing branches
+ Git branch plus name: Creates branch
+
+ git checkout certain branch - Checksout the latest commit of a certain branch
+
+ What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+ - Branches are useful, e.g., if different versions of a programme will be prepared (e.g., an easier game version etc.)
+ - they can also help for doing some experimental work, that we might not want to use after all in the actual programme
+
+ Git branch
+
+ How do the diagrams help you visualize the branch structure?
+It helps me understand, where people have "branched out", in order to work on different topics. Also to understand, where one could have a "lost commit" (if there is no additional branch)
+
+Merging branches
+Go to master branch
+Merge the branch that you want to merge with git merge XXX
+
+
+
