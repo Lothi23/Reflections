@@ -1,0 +1,8 @@
+Git init
+- starts a new git in a certain folder. Files are saved under hidden folder .git within this folder
+
+Git status
+- shows the status of the git folder (e.g., how many files untracked, which commit is the latest one, how many commits etc.)
+
+What happens when you initialize a repository? Why do you need to do it?
+- The current folder plus sub folders will be part of the repository, in order to add version control. This means that .git folder is created that is waiting to be filled with commits. In order to track files, we need to use Git add (to come)
