@@ -1,0 +1,13 @@
+Lesson 3 - Github
+
+Creating remote and sync
+
+1. Github: Create repository with or without readme (as we already have commits)
+2. Git remote
+	a. Git remote no arguments - see all current remotes
+	b. Git remote add +name (usually origin) +url
+	c. verify: git remote -v (shows more information)
+3. In order to send to remote Git push
+	a. Git push +remote +branch we want to push
+
+When would you want to use a remote repository rather than keeping all your work local?
