@@ -1,5 +1,5 @@
 Git init
-- starts a new git in a certain folder. Files are saved under hidden folder .git within this folder
+- starts a new git repository in a certain folder. Files are saved under hidden folder .git within this folder
 
 Git status
 - shows the status of the git folder (e.g., how many files untracked, which commit is the latest one, how many commits etc.)
